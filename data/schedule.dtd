@@ -60,9 +60,11 @@ instructor  - who teaches the scheduled course
 <!-- Each aCourse element contains course booking at a certain day and time.
 -->
 <!ELEMENT aCourse (cBooking)*>
-<!-- code refers to a unique program course id -->
+<!-- code refers to a unique program course id and name refers to course name
+-->
 <!ATTLIST aCourse
     code CDATA #REQUIRED
+    name CDATA #REQUIRED
 >
 
 <!-- Each cBooking element contains:
@@ -72,7 +74,11 @@ daySlot     - weekday slot,
 room        - where the scheduled course will be held, and
 instructor  - who teaches the scheduled course
 -->
-<!ELEMENT cBooking (timeStart, timeEnd, daySlot, room, instructor)*>
+<!ELEMENT cBooking (daySlot, timeStart, timeEnd, room, instructor)*>
+<!-- type refers to course type -->
+<!ATTLIST cBooking
+    type (Lab|Lecture|Tutorial) #REQUIRED
+>
 
 <!-- Elements containing no children -->
 <!ELEMENT timeStart (#PCDATA)*>
