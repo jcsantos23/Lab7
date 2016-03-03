@@ -12,22 +12,23 @@ The data generated here comes from ACIT Winter 2016 Timetable.
 <!-- DAY PERSPECTIVE -->
 <!-- Each day element contains a specific day of the week (excluding weekend).
 -->
-<!ELEMENT day (sDay)*>
+<!ELEMENT day (aDay)*>
 
-<!-- Each sDay element contains day booking of certain course.
+<!-- Each aDay element contains day booking of certain course.
 -->
-<!ELEMENT sDay(dBooking)*>
-<!ATTLIST sDay
+<!ELEMENT aDay (dBooking)*>
+<!ATTLIST aDay
     weekday (Monday|Tuesday|Wednesday|Thursday|Friday) #REQUIRED
 >
 
 <!-- Each dBooking element contains:
-time        - time slot,
+timeStart   - starting time,
+timeEnd     - dismissal time,
 courseName  - name of the scheduled course at that time slot,
 room        - where the scheduled course will be held, and
 instructor  - who teaches the scheduled course
 -->
-<!ELEMENT dBooking (time, courseName, room, instructor)*>
+<!ELEMENT dBooking (timeStart, timeEnd, courseName, room, instructor)*>
 
 <!-- PERIOD PERSPECTIVE -->
 <!-- Each period element contains a timeslot available for course scheduling
@@ -38,18 +39,45 @@ instructor  - who teaches the scheduled course
 -->
 <!ELEMENT timeslot (pBooking)*>
 <!ATTLIST timeslot
-    timeframe (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
+    duration (1|2) #REQUIRED
+    start (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
+    end (0920|1020|1120|1220|1320|1420|1520|1620|1720) #REQUIRED
 >
 
 <!-- Each pBooking element contains:
-day         - weekday slot,
+daySlot     - weekday slot,
 courseName  - name of the scheduled course at that weekday slot,
 room        - where the scheduled course will be held, and
 instructor  - who teaches the scheduled course
 -->
-<!ELEMENT pBooking (day, courseName, room, instructor)*>
+<!ELEMENT pBooking (daySlot, courseName, room, instructor)*>
 
 <!-- COURSE PERSPECTIVE -->
 <!-- Each course element contains a course available in the term
 -->
 <!ELEMENT course (aCourse)*>
+
+<!-- Each aCourse element contains course booking at a certain day and time.
+-->
+<!ELEMENT aCourse (cBooking)*>
+<!-- code refers to a unique program course id -->
+<!ATTLIST aCourse
+    code CDATA #REQUIRED
+>
+
+<!-- Each cBooking element contains:
+timeStart   - starting time,
+timeEnd     - dismissal time,
+daySlot     - weekday slot,
+room        - where the scheduled course will be held, and
+instructor  - who teaches the scheduled course
+-->
+<!ELEMENT cBooking (timeStart, timeEnd, daySlot, room, instructor)*>
+
+<!-- Elements containing no children -->
+<!ELEMENT timeStart (#PCDATA)*>
+<!ELEMENT timeEnd (#PCDATA)*>
+<!ELEMENT daySlot (#PCDATA)*>
+<!ELEMENT courseName (#PCDATA)*>
+<!ELEMENT room (#PCDATA)*>
+<!ELEMENT instructor (#PCDATA)*>
