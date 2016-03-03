@@ -1,0 +1,7 @@
+DD/MM/YY @ hh:mm - Change Description (INITIAL)
+
+02/03/16 @ 16:01 - Uploaded CodeIgniter Starter (CS)
+02/03/16 @ 16:03 - Created schedule.dtd file (CS)
+
+03/03/16 @ 15:31 - Modified and updated schedule.dtd file (CS)
+03/03/16 @ 15:41 - Created winter2016-course xml (CS)
