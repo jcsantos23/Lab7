@@ -16,7 +16,7 @@
             <timeStart>0830</timeStart>
             <timeEnd>1020</timeEnd>
             <room>SE12-306</room>
-            <instructor>Insert Teacher Here</instructor>
+            <instructor>Bethany Edmunds</instructor>
         </cBooking>
         <cBooking type="Lecture">
             <daySlot>Tuesday</daySlot>
@@ -32,7 +32,7 @@
             <timeStart>1030</timeStart>
             <timeEnd>1220</timeEnd>
             <room>SE12-306</room>
-            <instructor>Insert Teacher Here</instructor> 
+            <instructor>Medhat Elmasry</instructor> 
         </cBooking>
         <cBooking type="Lecture">
             <daySlot>Monday</daySlot>
@@ -110,7 +110,7 @@
             <timeStart>1030</timeStart>
             <timeEnd>1220</timeEnd>
             <room>SE12-306</room>
-            <instructor>Insert Teacher Here</instructor>
+            <instructor>Richard Chau</instructor>
         </cBooking>
     </aCourse>
 </course>
