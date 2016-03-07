@@ -39,9 +39,9 @@ instructor  - who teaches the scheduled course
 -->
 <!ELEMENT timeslot (pBooking)*>
 <!ATTLIST timeslot
-    duration (1|2) #REQUIRED
-    start (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED
-    end (0920|1020|1120|1220|1320|1420|1520|1620|1720) #REQUIRED
+    duration CDATA #REQUIRED
+    start CDATA #REQUIRED
+    end CDATA #REQUIRED
 >
 
 <!-- Each pBooking element contains:
