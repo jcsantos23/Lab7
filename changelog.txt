@@ -5,3 +5,6 @@ DD/MM/YY @ hh:mm - Change Description (INITIAL)
 
 03/03/16 @ 15:31 - Modified and updated schedule.dtd file (CS)
 03/03/16 @ 15:41 - Created winter2016-course xml (CS)
+03/06/16 @ 15:30 - Created and completed winter2016-day.xml (JL)
+03/06/16 @ 15:45 - Updated winter2016-course.xml (JL)
+03/06/16 @ 16:05 - Created winter2016-period.xml (JL)
