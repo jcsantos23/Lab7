@@ -2,6 +2,6 @@
 
 Ramon Dhami
 Johnathan Li
-J Santos
+Christian Santos
 
 Link to repository: https://github.com/Lab7-XML/Lab7
