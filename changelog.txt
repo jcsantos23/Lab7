@@ -8,5 +8,8 @@ DD/MM/YY @ hh:mm - Change Description (INITIAL)
 03/06/16 @ 15:30 - Created and completed winter2016-day.xml (JL)
 03/06/16 @ 15:45 - Updated winter2016-course.xml (JL)
 03/06/16 @ 16:05 - Created winter2016-period.xml (JL)
-03/07/16 @ 14:10 - modified README.md to include names (RD)
-03/07/16 @ 14:24 - fixed xml validation for period (RD)
+
+03/07/16 @ 14:10 - Modified README.md to include names (RD)
+03/07/16 @ 14:24 - Fixed xml validation for period (RD)
+
+03/09/16 @ 15:50 - Reuploaded CodeIgniter Starter with .htaccess (CS)
