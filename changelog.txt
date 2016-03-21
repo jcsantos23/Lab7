@@ -14,3 +14,5 @@ DD/MM/YY @ hh:mm - Change Description (INITIAL)
 
 03/09/16 @ 15:50 - Reuploaded CodeIgniter Starter with .htaccess (CS)
 03/09/16 @ 16:00 - Created Timetable.php model (CS)
+03/10/16 @ 14:40 - changed multiplicity in schedule.dtd  (RD)
+03/10/16 @ 14:40 - modified period.xml (pbooking) so it makes more sense  (RD)

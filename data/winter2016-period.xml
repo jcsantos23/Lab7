@@ -14,7 +14,8 @@ and open the template in the editor.
         <courseName>Enterprise Systems Admin Lab</courseName>
         <room>SE12-306</room>
         <instructor>Bethany Edmunds</instructor>
-        
+            </pBooking>
+             <pBooking> 
         <daySlot>Friday</daySlot>
         <courseName>Intro to Business Intelligence Lecture</courseName>
         <room>SW9-206</room>
@@ -37,12 +38,14 @@ and open the template in the editor.
         <courseName>Content Management Systems Admin Lab</courseName>
         <room>SE12-306</room>
         <instructor>Medhat Elmasry</instructor>
-        
+          </pBooking>
+            <pBooking>
         <daySlot>Thursday</daySlot>
         <courseName>Database Backup, Recover, Tuning Lab</courseName>
         <room>SE12-306</room>
         <instructor>Richard Chau</instructor>
-        
+          </pBooking>
+            <pBooking>
         <daySlot>Friday</daySlot>
         <courseName>Intro to Business Intelligence Lab</courseName>
         <room>SE12-306</room>
@@ -56,7 +59,8 @@ and open the template in the editor.
         <courseName>Enterprise Systems Admin Lecture</courseName>
         <room>SW1-2009</room>
         <instructor>Bethany Edmunds</instructor>
-        
+          </pBooking>
+            <pBooking>
         <daySlot>Tuesday</daySlot>
         <courseName>Content Management Systems Admin Lecture</courseName>
         <room>SW9-206</room>
@@ -79,7 +83,8 @@ and open the template in the editor.
         <courseName>Integrative Programming and Technologies Lab</courseName>
         <room>SE12-308</room>
         <instructor>James Parry</instructor>
-    
+      </pBooking>
+        <pBooking>
         <daySlot>Friday</daySlot>
         <courseName>Legal and Ethical Issues in IT</courseName>
         <room>SE12-306</room>
@@ -93,7 +98,8 @@ and open the template in the editor.
         <courseName>Database Backup, Recovery, Tuning Lecture</courseName>
         <room>SW9-206</room>
         <instructor>Richard Chau</instructor>
-    
+      </pBooking>
+        <pBooking>
         <daySlot>Tuesday</daySlot>
         <courseName>Enterprise Systems Admin Lecture</courseName>
         <room>SW3-3615</room>
