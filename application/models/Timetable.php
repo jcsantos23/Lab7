@@ -51,6 +51,22 @@ class Timetable extends CI_Model {
         }
     }
 
+    /*
+     * Public Accessors
+     */
+
+    public function getDays() {
+        return $this->day;
+    }
+
+    public function getPeriod() {
+        return $this->period;
+    }
+
+    public function getCourse() {
+        return $this->course;
+    }
+
 }
 
 class Booking extends CI_Model {
