@@ -15,9 +15,9 @@ class Timetable extends CI_Model {
 
     public function __construct() {
         parent:: __construct();
-        $this->xml_day = simplexml_load(DATAPATH, 'winter2016-day.xml');
-        $this->xml_period = simplexml_load(DATAPATH, 'winter2016-period.xml');
-        $this->xml_course = simplexml_load(DATAPATH, 'winter2016-course.xml');
+        $this->xml_day = simplexml_load_file(DATAPATH . 'winter2016-day.xml');
+        $this->xml_period = simplexml_load_file(DATAPATH . 'winter2016-period.xml');
+        $this->xml_course = simplexml_load_file(DATAPATH . 'winter2016-course.xml');
 
         //build list of school days
         foreach ($this->xml_day->aDay as $day) {
